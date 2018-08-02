@@ -11,7 +11,7 @@
 
 	
 	
-	<dubbo:reference id="usrRoleService" interface="com.caxs.base.service.IUsrRoleService"  timeout="30000"  />
+	<dubbo:reference id="userService" interface="com.caxs.base.service.IUserService"  timeout="30000"  />
 
 
 </beans>

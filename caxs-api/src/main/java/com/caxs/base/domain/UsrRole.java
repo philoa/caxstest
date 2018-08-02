@@ -1,13 +1,12 @@
 package com.caxs.base.domain;
 
 import java.io.Serializable;
-import java.math.BigDecimal;
 
 public class UsrRole implements Serializable {
 	
     private int id;
     
-    private String usr_lev;
+    private String usrLev;
 
 	public int getId() {
 		return id;
@@ -17,12 +16,12 @@ public class UsrRole implements Serializable {
 		this.id = id;
 	}
 
-	public String getUsr_lev() {
-		return usr_lev;
+	public String getusrLev() {
+		return usrLev;
 	}
 
-	public void setUsr_lev(String usr_lev) {
-		this.usr_lev = usr_lev;
+	public void setusrLev(String usrLev) {
+		this.usrLev = usrLev;
 	}
    
 }

@@ -7,13 +7,11 @@
 package com.caxs.base;
 
 
-
+import com.caxs.base.service.IUsrRoleService;
 import org.junit.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.AbstractJUnit4SpringContextTests;
-
-import com.caxs.caxs.base.service.IUsrRoleService;
 
 /**
  *
@@ -21,14 +19,14 @@ import com.caxs.caxs.base.service.IUsrRoleService;
  * @author 郑翔
  */
 @ContextConfiguration(locations = { "/spring-test.xml" })
-public class BaseTest   extends AbstractJUnit4SpringContextTests {
+public class BaseTest extends AbstractJUnit4SpringContextTests {
 
     @Autowired
     IUsrRoleService usrRoleService;
     @Test
     public void test() {
 
-    	System.out.println(usrRoleService.getUsrRole().getUsr_lev());
+    	System.out.println(usrRoleService.getUsrRole().getusrLev());
 
     }
 
