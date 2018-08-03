@@ -22,8 +22,8 @@
     <bean class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
         <property name="locations">
             <list>
-                <value>file:${CONF_HOME}/dubbo-server.properties</value>
-                <value>file:${CONF_HOME}/jdbc.properties</value>
+                <value>file:E:/caxinsTest/caxstest/caxs-conf/dubbo-server.properties</value>
+                <value>file:E:/caxinsTest/caxstest/caxs-conf/jdbc.properties</value>
             </list>
         </property>
     </bean>
@@ -100,7 +100,7 @@
             <value>classpath:mybatis-config.xml</value>
         </property>
         <!-- 自动扫描entity目录, 省掉Configuration.xml里的手工配置 -->
-        <property name="mapperLocations" value="classpath*:daos/**/*Mapper.xml" />
+        <property name="mapperLocations" value="classpath*:daos/**/*Dao.xml" />
         <property name="plugins">
             <array>
                 <bean class="com.github.pagehelper.PageHelper">
