@@ -1,8 +1,7 @@
-package com.caxs.base.serviceImpl;
+package com.caxs.base.service;
 
 import com.caxs.base.dao.HmUserDao;
 import com.caxs.base.domain.HmUser;
-import com.caxs.base.service.IUserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 import org.springframework.util.StringUtils;

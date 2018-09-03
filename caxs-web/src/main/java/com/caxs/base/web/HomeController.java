@@ -14,7 +14,9 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 import javax.servlet.http.HttpServletRequest;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 /**
  * Created by kevin on 2017/6/11.
@@ -82,6 +84,8 @@ public class HomeController {
             HmUser user = new HmUser();
             user.setUsername(name);
             user.setPassword(password);
+            user.setId("141");
+            user.setLoginid("789");
             int a = userService.creatUser(user);
             if (a == 1) {
                 responseUtil.setMessage("注册成功！");
@@ -91,6 +95,7 @@ public class HomeController {
             }
         } catch (Exception e) {
             e.printStackTrace();
+            logger.info("aaa::"+e.getMessage());
             responseUtil.setMessage("注册失败");
             responseUtil.setSuccess(false);
             throw new BusinessException("注册失败！");
@@ -171,7 +176,10 @@ public class HomeController {
         try {
             List<HmUser> list = userService.selectUser();
             if (list.size() > 0) {
+                Map<Object, Object> map = new HashMap<>();
+                map.put("list" , list);
                 responseUtil.setMessage("查询成功！");
+                responseUtil.setData(map);
             } else {
                 responseUtil.setMessage("查询失败！");
                 responseUtil.setSuccess(false);

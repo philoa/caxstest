@@ -8,7 +8,7 @@
 	default-lazy-init="true">
    <!-- Service列表 -->
    <!-- 账号服务 -->
-	<dubbo:service interface="com.caxs.base.service.IUserService" ref="userService" />
+	<dubbo:service interface="com.caxs.base.service.IUserService" ref="userServiceImpl" />
 
 
 
