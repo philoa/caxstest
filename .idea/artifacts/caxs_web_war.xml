@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="caxs-web:war">
+    <output-path>$PROJECT_DIR$/caxs-web/target</output-path>
+    <root id="archive" name="caxs-web.war">
+      <element id="artifact" artifact-name="caxs-web:war exploded" />
+    </root>
+  </artifact>
+</component>

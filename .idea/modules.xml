@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/caxs-api/caxs-api.iml" filepath="$PROJECT_DIR$/caxs-api/caxs-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/caxs-core/caxs-core.iml" filepath="$PROJECT_DIR$/caxs-core/caxs-core.iml" />
+      <module fileurl="file://$PROJECT_DIR$/caxs-parent/caxs-parent.iml" filepath="$PROJECT_DIR$/caxs-parent/caxs-parent.iml" />
+      <module fileurl="file://$PROJECT_DIR$/caxs-service/caxs-service.iml" filepath="$PROJECT_DIR$/caxs-service/caxs-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/caxs-web/caxs-web.iml" filepath="$PROJECT_DIR$/caxs-web/caxs-web.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/caxstest.iml" filepath="$PROJECT_DIR$/.idea/caxstest.iml" />
+    </modules>
+  </component>
+</project>
